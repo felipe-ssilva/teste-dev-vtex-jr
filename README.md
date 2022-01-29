@@ -1,4 +1,4 @@
-## Desenvolvedor Full Stack/Front-End VTEX IO - Teste
+## Desenvolvedor Full Stack/Front-End VTEX IO - Framework Digital
 
 Olá DEV! Nesse desafio, você construirá a tela de um _ecommerce_ seguindo o wireframe proposto e alguns requisitos que consideramos importantes.
 
@@ -9,7 +9,7 @@ O teste consiste em uma _home_ simples [Veja o Layout](./assets/ecommerce-site-w
 ### Requisitos
 
 1. Requisitos gerais
-  - Utilize o ([wireframe](./assets/ecommerce-site-wireframe.jpg) como base, mas deixe sua criatividade trabalhar.
+  - Utilize o [wireframe](./assets/ecommerce-site-wireframe.jpg) como base, mas deixe sua criatividade trabalhar.
   - A aplicação precisa ser responsiva.
   - O projeto deve ser desenvolvido utilizando React, GraphQL e Node.
   - O projeto deve ter um README com todas as instruções sobre como executar e testar o projeto.
