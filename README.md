@@ -1,34 +1,42 @@
-## Desenvolvedor Full Stack/Front-End VTEX IO - Framework Digital
+## Teste o APP em produção
+[Acessar](https://wonderful-jepsen-cd4139.netlify.app/)
 
-Olá DEV! Nesse desafio, você construirá a tela de um _ecommerce_ seguindo o wireframe proposto e alguns requisitos que consideramos importantes.
+## Extensões do VSCode necessárias
 
-Faça um fork deste repositório e ao finalizar o teste, submeta um pull request para o repositório que nosso time será notificado.
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [Prettier ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
 
-O teste consiste em uma _home_ simples [Veja o Layout](./assets/ecommerce-site-wireframe.jpg)
+## Bibliotecas necessárias
 
-### Requisitos
+- Yarn
+- Node
 
-1. Requisitos gerais
-  - Utilize o [wireframe](./assets/ecommerce-site-wireframe.jpg) como base, mas deixe sua criatividade trabalhar.
-  - A aplicação precisa ser responsiva.
-  - O projeto deve ser desenvolvido utilizando React, GraphQL e Node.
-  - O projeto deve ter um README com todas as instruções sobre como executar e testar o projeto.
-  - Possuir testes automatizados é um diferencial.
+## Instruções para executar em ambiente de desenvolvimento
 
-2. Requisitos da página:
-  - Consuma esse [endpoint](https://run.mocky.io/v3/91af60d6-7265-4aa5-ae9b-c13ee3d247a8) para renderizar a vitrine de produtos;
-    - Deverá ser mostrado foto, nome, preço (de/por - caso possua) e flag de desconto (caso possua).
-  - O cliente poderá adicionar o produto ao carrinho;
-  - Permitir que sejam removidos os itens no carrinho
+Você deve executar, em ordem:
+- yarn install
+- yarn start
 
-## Avaliação
+## Scripts disponíveis
 
-2. Iremos te avaliar pela arquitetura e qualidade/organização do código.
-3. Depois de avaliarmos o desafio, te chamaremos para conversar e discutir sobre decisões que você tomou no desenvolvimento do projeto.
-4. Achamos que entre **7 a 15 dias** é um tempo ok para fazer o desafio, mas sabemos que nem todo mundo tem o mesmo nível de disponibilidade. Portanto, nos avise se precisar de mais tempo, ok?
-5. Boa sorte :)
+No diretório do projeto, você pode executar:
 
-### Fim:
-Ao finalizar o teste, submeta um pull request para o repositório que nosso time será notificado. Se tiver alguma observação, escreva no pull request.
+### `yarn start`
 
-Em caso de dúvidas técnicas, não exite em nos procurar pelo e-mail: felipedasilva@frwk.com.br
+Inicia o APP em modo de desenvolvimento
+Abra [http://localhost:3000](http://localhost:3000) para ver no navegador.
+
+A página recarrega caso edite alguma coisa.\
+Você também pode ver erros no console.
+
+### `yarn test`
+
+Inicia o executor de teste no modo interativo.\
+
+### `yarn build`
+
+Compila o aplicativo para produção na pasta `build`.\
+Ele agrupa corretamente o React no modo de produção e otimiza a compilação para o melhor desempenho.
+A compilação é reduzida e os nomes dos arquivos incluem os hashes.\
+O APP está pronto para ser implantado!
