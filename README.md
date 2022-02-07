@@ -25,7 +25,7 @@ O teste consiste em uma _home_ simples [Veja o Layout](./assets/ecommerce-site-w
 
 2. Iremos te avaliar pela arquitetura e qualidade/organização do código.
 3. Depois de avaliarmos o desafio, te chamaremos para conversar e discutir sobre decisões que você tomou no desenvolvimento do projeto.
-4. Achamos que entre **7 a 15 dias** é um tempo ok para fazer o desafio, mas sabemos que nem todo mundo tem o mesmo nível de disponibilidade. Portanto, nos avise se precisar de mais tempo, ok?
+4. Achamos que entre **3 a 5 dias** é um tempo ok para fazer o desafio, mas sabemos que nem todo mundo tem o mesmo nível de disponibilidade. Portanto, nos avise se precisar de mais tempo, ok?
 5. Boa sorte :)
 
 ### Fim:
