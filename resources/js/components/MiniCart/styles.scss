@@ -1,0 +1,172 @@
+.miniCart {
+  &Button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &Qtty {
+    & {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #5f3473;
+      margin-left: 5px;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 10px;
+      color: #fff;
+    }
+  }
+
+  /*Exibição do itens */
+  &Overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  &Items {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px 16px;
+  }
+  &Close {
+    & {
+      background: none transparent;
+      border: 0;
+      cursor: pointer;
+      padding: 0;
+    }
+    &--icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  &Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7a7a7a;
+
+    &--title {
+      font-weight: bold;
+      margin: 0;
+      color: #5f3473;
+    }
+  }
+
+  &Body {
+    & {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px 0;
+    }
+  }
+
+  &Product {
+    &List {
+      & {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 80vh;
+        overflow: auto;
+        border-bottom: 1px solid #7a7a7a;
+      }
+    }
+
+    & {
+      position: relative;
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid #f1f1f1;
+      padding: 10px;
+      align-items: center;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+
+    &--remove {
+      position: absolute;
+      right: 0;
+      border: 0;
+      background: none transparent;
+      cursor: pointer;
+    }
+
+    &--picture {
+      & {
+        display: flex;
+        margin-right: 15px;
+      }
+    }
+
+    &--image {
+      width: 100%;
+      max-height: 60px;
+    }
+
+    &--info {
+      max-width: 65%;
+    }
+
+    &--qtty {
+      font-size: 12px;
+    }
+
+    &--name {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &--price {
+      font-size: 12px;
+    }
+  }
+
+  &Footer {
+    & {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 0;
+    }
+  }
+
+  &GoToCheckout {
+    &,
+    &:hover {
+      display: flex;
+      width: 100%;
+      height: 48px;
+      border-radius: 5px;
+      background-color: #5f3473;
+      color: #fff;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}

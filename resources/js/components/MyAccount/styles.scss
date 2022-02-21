@@ -1,0 +1,26 @@
+.myAccount {
+  & {
+    position: relative;
+    margin: 0 21px;
+  }
+
+  &Icon {
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  &Button {
+    &,
+    &:hover {
+      width: 97px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 13px;
+      color: #7a7a7a;
+      text-decoration: none;
+    }
+  }
+}

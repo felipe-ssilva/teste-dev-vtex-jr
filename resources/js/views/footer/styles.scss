@@ -1,0 +1,155 @@
+.footer {
+  & {
+    width: 100%;
+    background-color: #5f3473;
+    padding: 27px 16px 9px;
+    color: #fff;
+  }
+  &Content {
+    & {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &Title {
+    & {
+      color: #fff;
+      font-weight: bold;
+      padding: 0;
+    }
+
+    &::after {
+      & {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &Col {
+    & {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 27px;
+    }
+
+    &.contact {
+      align-items: center;
+      justify-content: center;
+    }
+
+    &.copy {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  &Item {
+    &s {
+      & {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &--link {
+      &,
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  &Contact {
+    &Btn {
+      &,
+      &:hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 198px;
+        height: 38px;
+        background: #ffffff;
+        border-radius: 5px;
+        color: #5f3473;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 26px;
+        cursor: pointer;
+      }
+    }
+
+    &Icon {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+
+  &Copy {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+
+    &.framework {
+      img {
+        max-width: 100%;
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &Content {
+      & {
+        flex-direction: row;
+      }
+    }
+
+    &Col {
+      & {
+        padding: 0 16px;
+      }
+
+      &.copy {
+        justify-content: flex-end;
+      }
+    }
+    &Copy {
+      padding-left: 29px;
+    }
+  }
+}
+@media (min-width: 1278px) {
+  .footer {
+    & {
+      padding: 25px 0;
+    }
+
+    &Col {
+      & {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.tns {
+  &-nav {
+    & {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      & {
+        border: 0;
+        background-color: #bdbdbd;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 6px;
+        padding: 0;
+      }
+      &.tns-nav-active {
+        background-color: #5f3473;
+      }
+    }
+  }
+}

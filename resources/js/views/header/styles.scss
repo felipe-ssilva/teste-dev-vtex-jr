@@ -1,0 +1,56 @@
+.header {
+  & {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    width: 100%;
+    z-index: 9;
+  }
+
+  &Content {
+    align-items: center;
+    flex-direction: column;
+    padding: 7px 20px 11px;
+  }
+
+  &Top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &Logo {
+    &Caret {
+      height: 25px;
+    }
+  }
+
+  &SearchBar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &Top {
+      margin: 0;
+    }
+    &Content {
+      align-items: center;
+      flex-direction: column;
+      padding: 16px 20px 24px 0;
+    }
+
+    &SearchBar {
+      justify-content: flex-end;
+      margin-right: 22px;
+    }
+  }
+}
