@@ -1,0 +1,46 @@
+.searchBar {
+  &,
+  &Form {
+    display: flex;
+    width: 100%;
+  }
+
+  & {
+    border-bottom: 1px solid #7a7a7a;
+    padding-bottom: 7px;
+  }
+
+  &Form {
+    & {
+      position: relative;
+    }
+    &Input {
+      &,
+      &Group {
+        align-items: center;
+        display: flex;
+        width: 100%;
+      }
+
+      & {
+        border: 0;
+        border-radius: 0;
+        outline: none;
+        font-size: 13px;
+        font-weight: 400;
+        padding-right: 30px;
+      }
+    }
+
+    &Button {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .searchBar {
+    width: 85%;
+  }
+}

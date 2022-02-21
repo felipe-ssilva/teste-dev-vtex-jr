@@ -1,34 +1,68 @@
-## Desenvolvedor Full Stack/Front-End VTEX IO - Framework Digital
+## Introdução
 
-Olá DEV! Nesse desafio, você construirá a tela de um _ecommerce_ seguindo o wireframe proposto e alguns requisitos que consideramos importantes.
+Essa é a aplicação front-end padrão de desenvolvimento, englobando todos os módulos existentes dentro do mesma.
 
-Faça um fork deste repositório e ao finalizar o teste, submeta um pull request para o repositório que nosso time será notificado.
+## O APP
 
-O teste consiste em uma _home_ simples [Veja o Layout](./assets/ecommerce-site-wireframe.jpg)
+### Pré-requisitos
 
-### Requisitos
+A **stack** utilizada, foi montada utilizando um agrupamento de tecnolgias para melhor flexibilização e personalização do sistema. Abaixo uma lista breve com as tecnologias utilizadas:
 
-1. Requisitos gerais
-  - Utilize o [wireframe](./assets/ecommerce-site-wireframe.jpg) como base, mas deixe sua criatividade trabalhar.
-  - A aplicação precisa ser responsiva.
-  - O projeto deve ser desenvolvido utilizando React, GraphQL e Node.
-  - O projeto deve ter um README com todas as instruções sobre como executar e testar o projeto.
-  - Possuir testes automatizados é um diferencial.
+ - **Npm**
+ - **Webpack**
+ - **WebPack Dev Server**
+ - **Babel**
+ - **React**
+ - **Sass**
+ - **Material UI**
+ - **StoryBook**
+ - **ESLint**
+ - **JSDoc**
+ - **Husky**
 
-2. Requisitos da página:
-  - Consuma esse [endpoint](https://run.mocky.io/v3/91af60d6-7265-4aa5-ae9b-c13ee3d247a8) para renderizar a vitrine de produtos;
-    - Deverá ser mostrado foto, nome, preço (de/por - caso possua) e flag de desconto (caso possua).
-  - O cliente poderá adicionar o produto ao carrinho;
-  - Permitir que sejam removidos os itens no carrinho
+### Executando a aplicação front-end
 
-## Avaliação
+A seguir descrevo passo-a-passo os seguintes comandos para iniciar a aplicação em modo de desenvolvimento. Partindo da raiz do projeto execute os seguintes comandos:
 
-2. Iremos te avaliar pela arquitetura e qualidade/organização do código.
-3. Depois de avaliarmos o desafio, te chamaremos para conversar e discutir sobre decisões que você tomou no desenvolvimento do projeto.
-4. Achamos que entre **3 a 5 dias** é um tempo ok para fazer o desafio, mas sabemos que nem todo mundo tem o mesmo nível de disponibilidade. Portanto, nos avise se precisar de mais tempo, ok?
-5. Boa sorte :)
+### Instalação, desenvolvimento e compilação
 
-### Fim:
-Ao finalizar o teste, submeta um pull request para o repositório que nosso time será notificado. Se tiver alguma observação, escreva no pull request.
+Na pasta raiz do projeto executo o seguinte comando em seu terminal:
 
-Em caso de dúvidas técnicas, não exite em nos procurar pelo e-mail: felipedasilva@frwk.com.br
+```bash
+npm install
+```
+
+Após a execução da instalação das dependências, ainda na pasta raiz do projeto execute o seguinte comando para executar a aplicação em modo de desenvolvimento. A aplicação iniciará utilizando a porta `3000`.
+
+```bash
+npm run start 
+```
+
+Após a finalização do desenvolvimento, é possível gerar um pacote para ser enviado para o ambiente de homologação ou produção. Para compilar esse pacote, utilize o comando abaixo:
+
+```bash
+npm run build:prod
+```
+
+## JsDocs
+
+O projeto possui um pequena área aonde é possível gerar uma documentação visual de todos os métodos utilizados que não sejam no modelo `JSX`. Para realizar a visualização desse documento, basta utilizar a seguinte linha de comando em seu terminal:
+
+```bash
+npm run docs
+```
+
+Após o documento ser gerado com sucesso, uma nova pasta chamada `.docs` será adicionada a raiz do projeto e dentro da mesma, alguns arquivos `.html` serão criados com uma aplicalção visual interna para navegação dos métodos que o projeto contém.
+
+## Webpack Bundle Analyzer
+
+O projeto também possui um analisador de `bundles` e `chunks`. Essa função permite verificar quais arquivos tem mais peso dentro da aplicação e o que cada um contém. Para realizar o uso dessa funcionalidade utilize a seguinte linha de comando em seu terminal:
+
+```bash
+npm run analyzer
+```
+
+### Observação
+Não utilizo um webpack proprio. Tem algum tempo que utilizo do Bruno, até que deixei ele como autor.
+
+Você poderá navegar por cada arquivo em uma aplicação totalmente visual e verificar se algo está errado.

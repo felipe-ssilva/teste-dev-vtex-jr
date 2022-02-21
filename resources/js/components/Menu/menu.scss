@@ -1,0 +1,10 @@
+.menu {
+  &Button {
+    &Icon {
+      & {
+        width: 22.5px;
+        height: 15px;
+      }
+    }
+  }
+}
