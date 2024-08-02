@@ -1,4 +1,4 @@
-## Desenvolvedor Full Stack/Front-End VTEX IO - Framework Digital
+## Desenvolvedor Full Stack/Front-End VTEX IO
 
 Olá DEV! Nesse desafio, você construirá a tela de um _ecommerce_ seguindo o wireframe proposto e alguns requisitos que consideramos importantes.
 
@@ -30,5 +30,3 @@ O teste consiste em uma _home_ simples [Veja o Layout](./assets/ecommerce-site-w
 
 ### Fim:
 Ao finalizar o teste, submeta um pull request para o repositório que nosso time será notificado. Se tiver alguma observação, escreva no pull request.
-
-Em caso de dúvidas técnicas, não exite em nos procurar pelo e-mail: felipedasilva@frwk.com.br
