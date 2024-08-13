@@ -1,4 +1,4 @@
-## Desenvolvedor Full Stack/Front-End VTEX IO
+## Desenvolvedor Front-End Jr
 
 Olá DEV! Nesse desafio, você construirá a tela de um _ecommerce_ seguindo o wireframe proposto e alguns requisitos que consideramos importantes.
 
