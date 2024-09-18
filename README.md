@@ -12,7 +12,7 @@ O teste consiste em construir a de um e-commerce _home_ seguindo o wireframe pro
   - Possuir testes automatizados é um diferencial.
 
 2. Requisitos da página:
-  - Consuma esse [endpoint](https://run.mocky.io/v3/83960dab-2161-49e8-9244-3eca1920f7ef) para renderizar a vitrine de produtos;
+  - Consuma esse [json](https://github.com/felipe-ssilva/teste-dev-vtex-jr/blob/master/assets/mock.json) para renderizar a vitrine de produtos;
     - Deverá ser mostrado foto, nome, preço (de/por - caso possua) e flag de desconto (caso possua).
 
 ## Avaliação
